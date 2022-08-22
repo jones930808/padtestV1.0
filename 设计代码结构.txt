@@ -1,0 +1,35 @@
+工程结构
+1、基类common  baseAPI封装
+       - 一个业务模块：增删改查
+       -后续的所有业务都可以继承这个基类
+2、libs： 业务层
+        - 登录模块
+        - 留言模块
+        - 考试模块
+3、configs 配置
+        - 环境的数据、项目的URL
+4、data 数据层
+        - 测试用例
+            -Excel用例
+            -yaml用例
+5、用例层（执行用例）
+6、工具包
+
+请求参数说明
+data:使用场景
+    - 表单格式 form-- a=1&b=2
+    - 表单里又json a=1&b={"name":"xt}
+json:使用场景--请求头里面type-json
+
+分析接口特性：
+    -登录接口的密码使用了加密操作
+        -MD5
+            -简单的md5
+            -md5加盐 salt
+            -md5 双重加盐
+        -RSA 公密钥
+        -AES
+常用python操作excel第三方库
+    xlrd/xlwt/openpyxl
+xlrd ==>处理xls后缀
+openpyxl==>处理xlxs后缀
